@@ -68,7 +68,7 @@ ms1:=12;//декабря
 dt1:=encodedate(god,ms1,dn1);//кодируем дату
 Form1.StringGrid1.Cells[1,2]:=datetostr(dt1);//выводим начало каникул
 dn2:=03;//третье
-ms2:=01;//января
+ms2:=01;//января 
 dt2:=encodedate(god+1,ms2,dn2);//кодируем эту дату
 while dayofweek(dt2)<>1 do//ищем ближайшее воскресенье
   dt2:=dt2+1;
@@ -102,7 +102,7 @@ while dayofweek(dt2)<>1 do//пока не найдём ближайшее вос
   dt2:=dt2+1;//увеличиваем дату на день
 Form1.StringGrid1.Cells[2,4]:=datetostr(dt2);//выводим дату конца каникул
 end;
- 
+
 procedure TForm1.Button1Click(Sender: TObject);
 var god:integer;
 begin
