@@ -102,7 +102,7 @@ while dayofweek(dt2)<>1 do//пока не найдём ближайшее вос
   dt2:=dt2+1;//увеличиваем дату на день
 Form1.StringGrid1.Cells[2,4]:=datetostr(dt2);//выводим дату конца каникул
 end;
-
+ 
 procedure TForm1.Button1Click(Sender: TObject);
 var god:integer;
 begin
